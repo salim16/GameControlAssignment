@@ -1,0 +1,8 @@
+<div class="col-xs-12">
+    <div class="panel panel-default">
+        <div class="panel-body" *ngIf="num % 2 === 0, else marker" [ngStyle]="{backgroundColor: 'aqua'}">Even - {{num}}</div>
+        <ng-template #marker>
+            <div class="panel-body" [ngStyle]="{backgroundColor: 'wheat'}">Odd - {{num}}</div>
+        </ng-template>
+    </div>
+</div>
